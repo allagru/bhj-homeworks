@@ -2,7 +2,7 @@ const slides = Array.from(document.querySelectorAll('.slider__item'));
 const btnLeft = document.querySelector('.slider__arrow_prev');
 const btnRight = document.querySelector('.slider__arrow_next');
 
-btnLeft.onclick = () => {
+btnRight.onclick = () => {
     let active = slides.findIndex((value) =>
         value.classList.contains('slider__item_active')
     );
@@ -12,7 +12,7 @@ btnLeft.onclick = () => {
     slides[active].classList.add('slider__item_active');
 };
 
-btnRight.onclick = () => {
+btnLeft.onclick = () => {
     let active = slides.findIndex((value) =>
         value.classList.contains('slider__item_active')
     );
